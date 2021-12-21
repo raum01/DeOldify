@@ -5,7 +5,7 @@ from .filters import IFilter, MasterFilter, ColorizerFilter
 from .generators import gen_inference_deep, gen_inference_wide
 from PIL import Image
 import ffmpeg
-import youtube_dl
+import yt_dlp
 import gc
 import requests
 from io import BytesIO
@@ -241,7 +241,7 @@ class VideoColorizer:
             'retries': 30,
             'fragment-retries': 30
         }
-        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             ydl.download([source_url])
 
     def _extract_raw_frames(self, source_path: Path):

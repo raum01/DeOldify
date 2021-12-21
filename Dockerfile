@@ -35,7 +35,7 @@ RUN pip install --upgrade pip \
 		scikit-image==0.15.0 \
 		requests==2.21.0 \
 		ffmpeg-python==0.1.17 \
-		youtube-dl>=2019.4.17 \
+		yt-dlp \
 		jupyterlab==1.2.4 \
 		opencv-python>=3.3.0.10 \
 		fastai==1.0.51

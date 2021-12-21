@@ -10,7 +10,7 @@ dependencies:
 - fastai=1.0.51
 - pytorch=1.0.1
 - tensorboardX=1.6
-- youtube-dl>=2019.4.17
+- yt-dlp
 - jupyterlab
 - pillow=8.3.2
 - pip:
